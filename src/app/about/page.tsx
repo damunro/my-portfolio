@@ -1,23 +1,30 @@
-import { Box, Image, Link, SimpleGrid } from "@chakra-ui/react";
-
-import { LiaLinkedinIn } from "react-icons/lia";
+import {
+	Box,
+	Heading,
+	Image,
+	SimpleGrid,
+	Text,
+	VStack,
+} from "@chakra-ui/react";
 
 export default function About() {
 	return (
-		<SimpleGrid textStyle="xl" columns={[1, null, 2]}>
-			<Box>
-				<Image
-					src="david.jpg"
-					alt="My picture"
-					borderRadius="full"
-					height="170px"
-				/>
-			</Box>
-			<Box>
-				<Link href="https://www.linkedin.com/in/david-munro-7738381a2/">
-					<LiaLinkedinIn />
-				</Link>
-			</Box>
-		</SimpleGrid>
+		<VStack>
+			<Heading size="5xl">About me</Heading>
+			<SimpleGrid textStyle="xl" columns={[1, null, 2]} maxWidth="1000px">
+				<Box>
+					<Image src="david.jpg" alt="My picture" borderRadius="full" />
+				</Box>
+				<Box>
+					<Text p="3">
+						I am a recent computer science graduate with a passion for software
+						developement. Since summer of 2023, I have held a possition at the
+						United States Air Force as a computer scientist where I have worked
+						as a full stack developer in a DevOps pipeline, delivering software
+						solutions for internal tools used by our engineers.
+					</Text>
+				</Box>
+			</SimpleGrid>
+		</VStack>
 	);
 }

@@ -1,8 +1,9 @@
 import "./globals.css";
 
 import { Container } from "@chakra-ui/react";
+import Footer from "@/components/layout/Footer";
 import type { Metadata } from "next";
-import NavBar from "@/components/navigation/NavBar";
+import NavBar from "@/components/layout/NavBar";
 import { Provider } from "./provider";
 
 // import Header from "@/components/layout/header";
@@ -26,6 +27,7 @@ export default function RootLayout({
 					<Container aspectRatio={2} alignItems="flex-start">
 						{children}
 					</Container>
+					<Footer />
 				</Provider>
 			</body>
 		</html>

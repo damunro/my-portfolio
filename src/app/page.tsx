@@ -1,4 +1,4 @@
-import { Card, Link as ChakraLink } from "@chakra-ui/react";
+import { Card, Link as ChakraLink, Heading } from "@chakra-ui/react";
 
 import Link from "next/link";
 
@@ -14,6 +14,7 @@ export default function Home() {
 
 	return (
 		<div>
+			<Heading size="4xl">Projects</Heading>
 			{projects.map((project) => (
 				<Card.Root width="420px" key="name">
 					<Card.Body gap="2">

@@ -1,7 +1,7 @@
 import "./globals.css";
 
 import { Container } from "@chakra-ui/react";
-import Header from "@/components/layout/header";
+// import Header from "@/components/layout/header";
 import type { Metadata } from "next";
 import { Provider } from "./provider";
 
@@ -19,7 +19,7 @@ export default function RootLayout({
 		<html suppressHydrationWarning lang="en">
 			<body>
 				<Provider>
-					<Header />
+					{/* <Header /> */}
 					<Container aspectRatio={2} alignItems="flex-start">
 						{children}
 					</Container>

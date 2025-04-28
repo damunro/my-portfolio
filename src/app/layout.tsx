@@ -1,9 +1,11 @@
 import "./globals.css";
 
 import { Container } from "@chakra-ui/react";
-// import Header from "@/components/layout/header";
 import type { Metadata } from "next";
+import NavBar from "@/components/navigation/NavBar";
 import { Provider } from "./provider";
+
+// import Header from "@/components/layout/header";
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -20,6 +22,7 @@ export default function RootLayout({
 			<body>
 				<Provider>
 					{/* <Header /> */}
+					<NavBar />
 					<Container aspectRatio={2} alignItems="flex-start">
 						{children}
 					</Container>

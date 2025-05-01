@@ -13,6 +13,7 @@ export default function NavBar() {
 			width="100%"
 			p="4"
 			textStyle="3xl"
+			as={"header"}
 		>
 			<HStack>
 				<FaFish />

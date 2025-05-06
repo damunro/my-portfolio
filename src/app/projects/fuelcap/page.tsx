@@ -2,6 +2,7 @@ import { Box, Heading, Link, Stack } from "@chakra-ui/react";
 
 import { RiGithubFill } from "react-icons/ri";
 import { Tooltip } from "@/components/ToolTip";
+import { VideoHTMLAttributes } from "react";
 
 export default function FuelCap() {
 	return (
@@ -20,8 +21,10 @@ export default function FuelCap() {
 			<Box maxW="1200px" mx="auto" borderRadius="2xl">
 				<Box
 					as="video"
-					src="/fuelcap.mp4"
-					controls
+					{...{
+						src: "/fuelcap.mp4",
+						controls: true,
+					}}
 					width="90%"
 					mx="auto"
 					borderRadius="2xl"

@@ -1,15 +1,21 @@
 import { Box, Heading, Link, Stack } from "@chakra-ui/react";
 
 import { RiGithubFill } from "react-icons/ri";
+import { Tooltip } from "@/components/ToolTip";
 
 export default function FuelCap() {
 	return (
 		<Stack separator={<br />} w="80%">
 			<Heading size="6xl">
 				Capstone Project: Realsense Fuelcap{" "}
-				<Link href="https://github.com/damunro" target="_blank">
-					<RiGithubFill />
-				</Link>
+				<Tooltip content="Go to github page">
+					<Link
+						href="https://github.com/keenanbuckley/RealsenseFuelcap"
+						target="_blank"
+					>
+						<RiGithubFill />
+					</Link>
+				</Tooltip>
 			</Heading>
 			<Box
 				fontSize="2xl"

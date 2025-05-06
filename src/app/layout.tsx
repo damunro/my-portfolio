@@ -1,6 +1,7 @@
 import "./globals.css";
 
-import { Container } from "@chakra-ui/react";
+import { Center, Container, VStack } from "@chakra-ui/react";
+
 import Footer from "@/components/layout/Footer";
 import type { Metadata } from "next";
 import NavBar from "@/components/layout/NavBar";
@@ -18,15 +19,18 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en" suppressHydrationWarning>
+		<html suppressHydrationWarning lang="en">
 			<body>
 				<Provider>
-					{/* <Header /> */}
-					<NavBar />
-					<Container aspectRatio={2} alignItems="flex-start">
-						{children}
-					</Container>
-					<Footer />
+					<Center mx="0" px="0">
+						<VStack w="80%" maxW="1600">
+							<NavBar />
+							<Container aspectRatio={2} alignItems="flex-start">
+								{children}
+							</Container>
+							<Footer />
+						</VStack>
+					</Center>
 				</Provider>
 			</body>
 		</html>

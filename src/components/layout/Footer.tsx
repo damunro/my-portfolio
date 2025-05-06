@@ -5,7 +5,14 @@ import { RiGithubFill } from "react-icons/ri";
 
 export default function Footer() {
 	return (
-		<Container as={"footer"} textStyle="3xl">
+		<Container
+			as={"footer"}
+			textStyle="3xl"
+			position="fixed"
+			bottom="0"
+			left="0"
+			zIndex="overlay"
+		>
 			<Stack direction="row">
 				<Link
 					href="https://www.linkedin.com/in/david-munro-7738381a2/"

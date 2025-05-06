@@ -23,9 +23,9 @@ export default function RootLayout({
 			<body>
 				<Provider>
 					<Center mx="0" px="0">
-						<VStack w="80%" maxW="1600">
+						<VStack w="80%" maxW="1600" display="flex" flexDir="column">
 							<NavBar />
-							<Container aspectRatio={2} alignItems="flex-start">
+							<Container aspectRatio={2} alignItems="flex-start" pt="5em">
 								{children}
 							</Container>
 							<Footer />

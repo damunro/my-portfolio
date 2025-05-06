@@ -9,10 +9,13 @@ export default function NavBar() {
 			bg="bg"
 			shadow="md"
 			borderRadius="sm"
-			mb="2em"
+			mb="1em"
 			width="100%"
 			p="4"
 			textStyle="3xl"
+			position="fixed"
+			top="0"
+			zIndex="overlay"
 			as={"header"}
 		>
 			<HStack>

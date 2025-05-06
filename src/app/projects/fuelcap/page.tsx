@@ -17,6 +17,16 @@ export default function FuelCap() {
 					</Link>
 				</Tooltip>
 			</Heading>
+			<Box maxW="1200px" mx="auto" borderRadius="2xl">
+				<Box
+					as="video"
+					src="/fuelcap.mp4"
+					controls
+					width="90%"
+					mx="auto"
+					borderRadius="2xl"
+				/>
+			</Box>
 			<Box
 				fontSize="2xl"
 				bg="beige"
@@ -28,6 +38,16 @@ export default function FuelCap() {
 				of an existing robotics stack. The project was built in ROS 2, creating
 				a node which essentially served as a wrapper for our machine learning
 				model
+			</Box>
+			<Box
+				fontSize="2xl"
+				bg="tomato"
+				p={6}
+				borderRadius="2xl"
+				shadow="1em 1em 3em"
+			>
+				I will update more as I find it, it has been some time since I have
+				completed this project
 			</Box>
 		</Stack>
 	);
